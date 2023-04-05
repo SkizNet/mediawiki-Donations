@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ryan Schmidt"
+		]
+	},
+	"donations-extensionname": "{{name}}",
+	"donations-desc": "{{desc|name=Donations|url=https://www.mediawiki.org/wiki/Extension:Donations}}",
+	"sitesupport": "Text used for the donation link and portlet header"
+}

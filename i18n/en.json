@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ryan Schmidt"
+		]
+	},
+	"donations-extensionname": "Donations",
+	"donations-desc": "Provide methods for users to donate to the site",
+	"sitesupport": "Donate"
+}

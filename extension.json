@@ -1,0 +1,38 @@
+{
+	"name": "Donations",
+	"namemsg": "donations-extensionname",
+	"version": "1.0.0",
+	"author": [
+		"Ryan Schmidt"
+	],
+	"license-name": "GPL-3.0-or-later",
+	"url": "https://mwusers.org",
+	"descriptionmsg": "donations-desc",
+	"type": "other",
+	"MessagesDirs": {
+		"Donations": [
+			"i18n"
+		]
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extensions\\Donations\\": "src/"
+	},
+	"HookHandlers": {
+		"main": {
+			"class": "MediaWiki\\Extensions\\Donations\\Hooks"
+		}
+	},
+	"Hooks": {
+		"SkinAfterPortlet": "main"
+	},
+	"ResourceModules": {
+		"ext.donations.icons": {
+			"class": "MediaWiki\\ResourceLoader\\OOUIIconPackModule",
+			"icons": [ "heart" ]
+		}
+	},
+	"requires": {
+		"MediaWiki": ">= 1.39.0"
+	},
+	"manifest_version": 2
+}
