@@ -17,7 +17,7 @@ class Hooks implements SkinAfterPortletHook {
 	 * @return void
 	 */
 	public function onSkinAfterPortlet( $skin, $portletName, &$html ) {
-		if ( $portletName === 'sitesupport' ) {
+		if ( $portletName === 'sitesupport' || $portletName === 'sitesupport-nav' ) {
 			$skin->getOutput()->enableOOUI();
 			$skin->getOutput()->addModuleStyles( [ 'ext.donations.icons' ] );
 			$html = new ButtonWidget( [
